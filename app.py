@@ -4,6 +4,7 @@ import json
 
 import requests
 from flask import Flask, request
+from script import HelloWorld
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 app = Flask(__name__)
