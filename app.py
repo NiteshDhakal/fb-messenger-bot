@@ -10,7 +10,7 @@ VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 app = Flask(__name__)
 
 
-obj = scripy()
+obj = HelloWorld()
 obj.verify()
 
 
