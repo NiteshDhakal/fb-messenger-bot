@@ -10,8 +10,7 @@ VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 app = Flask(__name__)
 
 
-obj = HelloWorld()
-obj.verify()
+HelloWorld.verify()
 
 
 @app.route('/', methods=['POST'])
