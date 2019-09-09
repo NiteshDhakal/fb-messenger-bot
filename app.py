@@ -7,6 +7,8 @@ from flask import Flask, request
 ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/[YOUR_DATABASE_NAME]'
+db = SQLAlchemy(app)
 
 @app.route('/', methods=['GET'])
 def verify():
